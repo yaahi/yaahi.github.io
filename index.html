@@ -233,18 +233,23 @@
   <div id="post_content">
   <p>This is a simple javascript redirection library.</p>
 <div name="manualRedirectionDiv"/>
-<script>
+<script type="text/javascript">
+{
+    // https://github.com/sanskrit-lexicon/csl-ldev/blob/main/v02/mw/2.txt
     let mwSource = module_main.default.query.getParam("mw");
     if (mwSource) {
       module_main.default.redirectToPage(`https://github.com/sanskrit-lexicon/csl-ldev/blob/main/v02/mw/${mwSource}`);
     }
 
+}
+
+{
     let colognePage = module_main.default.query.getParam("cp");
     if (colognePage) {
       let dict = module_main.default.query.getParam("d");
-      redirectToPage(`https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/servepdf.php?dict=${dict}&page=${colognePage}`);
+      module_main.default.redirectToPage(`https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/servepdf.php?dict=${dict}&page=${colognePage}`);
     }
-
+}
 </script><blockquote>
 </blockquote>
 
@@ -265,7 +270,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/xetram/xetram.github.io/actions"><img src=""> Built </a> on 2022 Feb 11 16:52:07 UTC. (<a href="http://google.com/search?q=16%3a52%3a07%20UTC to IST">IST</a>)
+      <a href="https://github.com/xetram/xetram.github.io/actions"><img src=""> Built </a> on 2022 Feb 11 16:56:43 UTC. (<a href="http://google.com/search?q=16%3a56%3a43%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
