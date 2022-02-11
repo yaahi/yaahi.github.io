@@ -231,21 +231,12 @@
     </div>
   </aside>
   <div id="post_content">
-  <div name="manualRedirectionDiv"/>
+  <p>This is a simple javascript redirection library.</p>
+<div name="manualRedirectionDiv"/>
 <script>
-    function redirectToPage(url, manualRedirectionDiv, dryRun, debugInfo="") {
-        if (manualRedirectionDiv) {
-            // TODO: The below has no visible effect.
-            manualRedirectionDiv.innerHTML = `Redirecting <a href='${url}'>here</a>`;
-        }
-        if (url && !dryRun) {
-            window.location.replace(url + `?debugInfo=${debugInfo}`);
-        }
-    }
-
     let mwSource = module_main.default.query.getParam("mw");
     if (mwSource) {
-      redirectToPage(`https://github.com/sanskrit-lexicon/csl-ldev/blob/main/v02/mw/${mwSource}`);
+      module_main.default.redirectToPage(`https://github.com/sanskrit-lexicon/csl-ldev/blob/main/v02/mw/${mwSource}`);
     }
 
     let colognePage = module_main.default.query.getParam("cp");
@@ -274,7 +265,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/xetram/xetram.github.io/actions"><img src=""> Built </a> on 2022 Feb 11 16:48:37 UTC. (<a href="http://google.com/search?q=16%3a48%3a37%20UTC to IST">IST</a>)
+      <a href="https://github.com/xetram/xetram.github.io/actions"><img src=""> Built </a> on 2022 Feb 11 16:52:07 UTC. (<a href="http://google.com/search?q=16%3a52%3a07%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
