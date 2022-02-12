@@ -1,15 +1,15 @@
-baseURL = "https://xetram.github.io/"
+baseURL = "https://yaahi.github.io/"
 languageCode = "en-us"
-title = "जालक्षेत्रचयः"
+title = "याहि!!"
 theme = "sanskrit-documentation-theme-hugo"
 publishDir = "build_github"
 disablePathToLower = true
 
 [params]
-  githubEditMePathBase = "https://github.com/xetram/xetram.github.io/edit/master/content/"
-  contactLink = "https://github.com/xetram/xetram.github.io/issues/new"
+  githubEditMePathBase = "https://github.com/yaahi/yaahi.github.io/edit/master/content/"
+  contactLink = "https://github.com/yaahi/yaahi.github.io/issues/new"
   env = "production"
-  disqusShortcode = "xetram-projects-site"
+  disqusShortcode = "yaahi-projects-site"
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "CSV"]
