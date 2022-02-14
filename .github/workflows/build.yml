@@ -2,7 +2,13 @@ name: Build Hugo site
 
 on:
   push:
-    branches: [ master ]
+    branches: [ hugo-source ]
+  pull_request:
+    branches: [ master, content ]
+  workflow_dispatch:
+    inputs:
+      logLevel:
+        default: 'warning'
 
 jobs:
   transform:
@@ -31,7 +37,8 @@ jobs:
         hugo
     - name: Deploy
       uses: peaceiris/actions-gh-pages@v3
+      if: ${{ github.event_name != 'pull_request'}}
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
         publish_dir: ./build_github
-#        publish_branch: master
+        publish_branch: master
