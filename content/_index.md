@@ -12,7 +12,7 @@ This is a simple javascript redirection library.
   let editPage = module_main.default.query.getParam("e");
   if (editPage) {
     let dict = module_main.default.query.getParam("d");
-    module_main.default.redirectToPage(`https://github.com/sanskrit-lexicon/csl-ldev/blob/main/v02/${dict}/${editPage}`);
+    module_main.default.redirectToPage(`https://github.com/sanskrit-lexicon/csl-ldev/blob/main/v02/${dict}/${editPage}.txt`);
   }
 
 }
