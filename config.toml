@@ -9,7 +9,7 @@ disablePathToLower = true
   githubEditMePathBase = "https://github.com/yaahi/yaahi.github.io/edit/master/content/"
   contactLink = "https://github.com/yaahi/yaahi.github.io/issues/new"
   env = "production"
-  disqusShortcode = "yaahi-projects-site"
+  disqusShortcode = "sanskrit-coders"
 
 [outputs]
   home = ["HTML", "RSS", "JSON", "CSV"]
