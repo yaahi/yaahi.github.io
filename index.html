@@ -258,9 +258,9 @@
 <script type="text/javascript">
 {
   // - https://yaahi.github.io/?d=mw&e=2 redirects to https://github.com/sanskrit-lexicon/csl-ldev/blob/main/v02/mw/2.txt
-  let editPage = module_main.default.query.getParam("e");
+  let editPage = module_uiLib.default.query.getParam("e");
   if (editPage) {
-    let dict = module_main.default.query.getParam("d");
+    let dict = module_uiLib.default.query.getParam("d");
     module_uiLib.default.navigation.redirectToPage(`https://github.com/sanskrit-lexicon/csl-ldev/blob/main/v02/${dict}/${editPage}.txt`);
   }
 
@@ -268,9 +268,9 @@
 
 {
   // https://yaahi.github.io/?cp=0001-a&d=MW72 redirects to https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/servepdf.php?dict=MW72&page=0001-a?debugInfo=
-  let colognePage = module_main.default.query.getParam("cp");
+  let colognePage = module_uiLib.default.query.getParam("cp");
   if (colognePage) {
-    let dict = module_main.default.query.getParam("d");
+    let dict = module_uiLib.default.query.getParam("d");
     module_uiLib.default.navigation.redirectToPage(`https://www.sanskrit-lexicon.uni-koeln.de/scans/csl-apidev/servepdf.php?dict=${dict}&page=${colognePage}`);
   }
 }
@@ -332,7 +332,7 @@
     <a class="btn btn-secondary" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" /></a>
     <div class="btn small border">
       
-      <a href="https://github.com/yaahi/yaahi.github.io/actions"><img src=""> Built </a> on 2022 Mar 28 07:10:09 UTC. (<a href="http://google.com/search?q=07%3a10%3a09%20UTC to IST">IST</a>)
+      <a href="https://github.com/yaahi/yaahi.github.io/actions"><img src=""> Built </a> on 2022 Apr 3 05:32:50 UTC. (<a href="http://google.com/search?q=05%3a32%3a50%20UTC to IST">IST</a>)
     </div>
   <ul id="footer-bar-right-custom" class="list-group list-group-horizontal">
   </ul>
